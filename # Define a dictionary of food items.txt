@@ -1,0 +1,18 @@
+# Define a dictionary of food items and their corresponding restaurants
+food_dict = {
+    "pizza": "Joe's Pizza",
+    "sushi": "Sakura Sushi",
+    "burger": "Burger Shack",
+    "taco": "Taco Town",
+    "ramen": "Ramen House"
+}
+
+# Prompt the user to enter a food item
+food_item = input("Enter a food item to find a restaurant: ")
+
+# Check if the entered food item is in the dictionary
+if food_item.lower() in food_dict:
+    restaurant = food_dict[food_item.lower()]
+    print(f"The restaurant that serves {food_item} is {restaurant}")
+else:
+    print(f"Sorry, we couldn't find a restaurant that serves {food_item}")
